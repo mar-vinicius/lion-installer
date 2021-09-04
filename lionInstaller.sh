@@ -21,6 +21,7 @@ function makeInstall() {
 	if [[ $1 != "c" -o $1 != "C" ]] || [[ $1 != "w" -o $1 != "W" ]]
 	then
 		echo "Entrada inválida"
+		exit
 	fi
 
 	if [[ $1 == "c" ]] || [[ $1 == "C" ]]
